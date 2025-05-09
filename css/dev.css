@@ -1,0 +1,33 @@
+#body{
+    background-color: white;
+    
+}
+
+.container{
+
+    background-color: white;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 50px;
+    width: fit-content;
+    height: fit-content;
+    color: black;
+    margin: 50px;
+}
+
+#image1{
+
+    color: rgb(7, 7, 7);
+    background-color: white;
+    border-radius: 50px;
+    font-size: small;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+
+.imag{
+
+    border-radius: 50px;
+}
