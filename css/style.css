@@ -7,9 +7,15 @@ body{
    position: fixed;
 
 }
+
+  
+
+
 #nav-container{
    padding-left: 890px;
-  /*position: fixed;*/ 
+   
+   
+   /* position: fixed;   */
 
 }
 
@@ -23,7 +29,7 @@ body{
   left: 0;
    bottom: 0; 
   width: 100%;
-  background-color: #f4f1f1;
+  background-color:black;
   color: white;
   text-align: left;
    padding: 15px 0;
@@ -68,14 +74,20 @@ body{
 
 }
 
-.button1{
+button{color: white;
+background-color: black;
+}
+ .button1{
+ color: aqua;
   padding-left: 270px;
   height: 90vh;
   display: flex;
   align-items: center;
   position: fixed;
-}
+  transition: background-color 0.9ms;
+} 
 .button2{
+  color: aqua;
   padding-left: 370px;
   height: 90vh;
   display: flex;
@@ -86,9 +98,9 @@ body{
 background-color: rgb(173, 166, 167);
 
 } */
- #number{
+ /* #number{
   background-color: rgb(225, 15, 15);
- }
+ } */
 
 
 
