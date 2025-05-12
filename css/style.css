@@ -7,21 +7,26 @@ body{
    position: fixed;
 
 }
-
-  
-
-
+/* #nav{
+  padding-left:790px;
+} */
+ #nav{
+  padding-left: 400px;
+ }
 #nav-container{
-   padding-left: 890px;
+   padding-left: 500px;
+   position:fixed ;
+   justify-content: space-between;
+  
    
-   
-   /* position: fixed;   */
+    /* position: fixed;    */
 
 }
 
  #footer-container{
 
   padding-right: 600px;
+  bottom: 0px;
 
  }
 #footer-container {
