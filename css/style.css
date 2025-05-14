@@ -12,10 +12,13 @@ body{
 } */
  #nav{
   padding-left: 400px;
+   color: firebrick;
+  text-decoration: none;
  }
 #nav-container{
    padding-left: 890px;
-
+  color:firebrick;
+  text-decoration: none;
   
    
     /* position: fixed;    */
@@ -121,6 +124,11 @@ background-color: rgb(173, 166, 167);
   bottom: 200px;
   padding-inline-start: 20px;
   /* padding-inline-end: 400px; */
+}
+.skills-container{
+  position: absolute;
+  bottom: 243px;
+  padding-left: 70px;
 }
 
 
