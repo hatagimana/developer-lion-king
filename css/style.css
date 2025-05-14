@@ -12,13 +12,16 @@ body{
 } */
  #nav{
   padding-left: 400px;
-   color: firebrick;
-  text-decoration: none;
+   /* color: firebrick;
+  text-decoration: none; */
  }
 #nav-container{
    padding-left: 890px;
-  color:firebrick;
-  text-decoration: none;
+   background-color: black;
+   height: 50px;
+   
+  /* color:firebrick;
+  text-decoration: none; */
   
    
     /* position: fixed;    */
