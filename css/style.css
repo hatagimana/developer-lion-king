@@ -1,7 +1,9 @@
 body{
   background-color: white;
+  
 }
 #logo{
+
    text-align:left;
    padding-left: 30px;
    position: fixed;
@@ -10,24 +12,26 @@ body{
 /* #nav{
   padding-left:790px;
 } */
- /* #nav ul li{
+  /* #log ul li{
   list-style-type: none;
   width: 150px;
   float: left;
-
-  padding-left: 890px;
-
-   /* color: firebrick;
-  text-decoration: none; }*/
   
- 
- /* #li a{
+
+  /* padding-left: 890px; */
+
+    /* color: firebrick;
+  text-decoration: none; }
+   */
+  
+  /* #li a{
   text-decoration: none;
   background-color: black;
   color: white;
   line-height: 50px;
   padding: 0px;
- } */
+  text-align: center;
+ }  */
 #nav-container{
    padding-left: 890px;
    
@@ -88,16 +92,16 @@ body{
 }
 
 
-#text{
+/* #text{
   padding-left: 270px;
     height: 60vh;
     display: flex;
     align-items: center;
     position: fixed;
-    /* background-color: rgb(222, 180, 187);
-    padding: 0%; */
+    background-color: rgb(222, 180, 187);
+    padding: 0%; 
 
-}
+} */
 
 button{color: white;
 background-color: black;
@@ -111,7 +115,7 @@ background-color: black;
   position: fixed;
   transition: background-color 0.9ms;
 } 
-.button2{
+#delete{
   color: aqua;
   padding-left: 370px;
   height: 90vh;
@@ -196,8 +200,30 @@ background-color: rgb(173, 166, 167);
   box-shadow: 0 0 10px  rgb(0, 0, 0);
 }
 
-#email{
+/* #email{
   text-align: right;
   padding-left: -50px;
+} */
+#loginForm{
+  
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  padding-top: 100px;
+}
+/* #log{
+  text-decoration: overline;
+  
+} */
+.error{
+  color: red;
+  margin-top: 5px;
 }
 
+#blog-container{
+  text-align: center;
+  padding-right: 650px;
+  margin-top: 100px;
+}
+.area{
+  padding: 70px;
+}
