@@ -9,10 +9,6 @@ body{
    position: fixed;
 
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 778c6cc (ft/implement-homepage)
 /* #nav{
   padding-left:790px;
 } */
@@ -36,28 +32,6 @@ body{
   padding: 0px;
   text-align: center;
  }  */
-<<<<<<< HEAD
-#nav-container{
-   padding-left: 890px;
-   
-   /* background-color: black;
-   height: 50px; */
-  /* color:firebrick;
-  text-decoration: none; */
-  
-   
-    /* position: fixed;    */
-
-}
-
-  #footer-container{
-
-  padding-right: 600px;
-  bottom: 0px; 
-
- } 
-=======
->>>>>>> 778c6cc (ft/implement-homepage)
 #nav-container{
    padding-left: 800px;
 }
@@ -82,21 +56,13 @@ body{
   padding-right: 600px;
   bottom: 0px; 
 
-<<<<<<< HEAD
- }
-
-=======
  } 
->>>>>>> 778c6cc (ft/implement-homepage)
 #footer-container {
   position: fixed;
   left: 0;
    bottom: 0; 
   width: 100%;
-
   background-color:black;
-  background-color:black;
-
   color: white;
   text-align: left;
    padding: 15px 0;
@@ -115,11 +81,7 @@ body{
   text-align: center;
   position: fixed;
   padding-left: 200px;
-<<<<<<< HEAD
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-=======
   font-family:Poor Richard;
->>>>>>> 778c6cc (ft/implement-homepage)
   /* padding-right: 590px; */
  /* z-index: 100;  */
 
@@ -152,29 +114,15 @@ background-color: black;
 }
  .button1{
  color: aqua;
-
-button{color: white;
-background-color: black;
-}
- .button1{
- color: aqua;
-
   padding-left: 270px;
   height: 90vh;
   display: flex;
   align-items: center;
   position: fixed;
-
   transition: background-color 0.9ms;
 } 
 #delete{
   color: aqua;
-
-  transition: background-color 0.9ms;
-} 
-#delete{
-  color: aqua;
-
   padding-left: 370px;
   height: 90vh;
   display: flex;
@@ -184,7 +132,7 @@ background-color: black;
 /* .container-text{
 background-color: rgb(173, 166, 167);
 
-} *
+} */
  /* #number{
   background-color: rgb(225, 15, 15);
  } */
@@ -195,103 +143,6 @@ background-color: rgb(173, 166, 167);
   /* background-color: black; */
   /* width: 600px;
   height: 200px; */
-<<<<<<< HEAD
-
-  max-width: 290px;
-  margin: auto;
-  background-color: white;
-  padding: 140px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgb(62, 43, 145);
-  margin-top: 55.79px;
-/* 
-  padding-top: 100px;
-  
-  text-align: center; 
-  font-family: initial; */
-  /* padding-left: 70px;
-  padding-right: 70px;
-  position: absolute;
-  bottom: 200px;
-  padding-inline-start: 20px; */
-  /* padding-inline-end: 400px; */
-}
-.skills-container{
-  /* margin-top: 600px; */
-
-  /* position: absolute; */
-  bottom: 190px;
-  padding-left: 100px;
-   /* box-shadow: 0 0 10px rgb(62, 43, 145);
-  height: 430px; */
-  
-}
-.contact{
-  margin-top:-100px ;
-  text-align: center;
-  text-decoration: overline;
-}
-  #skills1{
-   position: sticky; 
-  margin-top: -10px;
-   max-width: 139px;
-  max-height: 469px;
-  /* margin: auto;  */
-  background-color:white;
-  padding: 40px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgb(0, 0, 0);
-  
-}  
-#skills2{
-  color: black;
-  background-color: white;
-  box-shadow: 0 0 10px  rgb(0, 0, 0);
-}
-#skills3{
-  color: black;
-  background-color: white;
-  box-shadow: 0 0 10px  rgb(0, 0, 0);
-}
-#skills4{
-  color: black;
-  background-color: white;
-  box-shadow: 0 0 10px  rgb(0, 0, 0);
-}
-
-/* #email{
-  text-align: right;
-  padding-left: -50px;
-} */
-#loginForm{
-  
-  text-align: center;
-  font-family: 'Courier New', Courier, monospace;
-  padding-top: 100px;
-}
-/* #log{
-  text-decoration: overline;
-  
-} */
-.error{
-  color: red;
-  margin-top: 5px;
-}
-
-#blog-container{
-  text-align: center;
-  padding-right: 650px;
-  margin-top: 100px;
-}
-.area{
-  padding: 70px;
-}
-  background-color: rgb(225, 15, 15);
- }
-
-
-=======
->>>>>>> 778c6cc (ft/implement-homepage)
 
   max-width: 290px;
   margin: auto;
