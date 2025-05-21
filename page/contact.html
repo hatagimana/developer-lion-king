@@ -15,7 +15,11 @@
         </div>
         </head>
         <div id="nav-container">
+<<<<<<< HEAD
             <nav>
+=======
+            <nav id="mynav">
+>>>>>>> 778c6cc (ft/implement-homepage)
                 <a href="home.html">home</a>
                 <a href="abaut.html">abaut</a>
                 <a href="login.html">login</a>
@@ -39,10 +43,44 @@
  <div id="email">
   <h3>Telphon Number:0782848694</h3>
    <h3>Email:jeanremmyhatagimana@gmail.com</h3><br>
+<<<<<<< HEAD
    <textarea placeholder="write the message........"></textarea><br>
    <button id="send">SEND</button>
  </div>
 
 </div>
+=======
+   <textarea  id="text1"  placeholder="write your message..."></textarea><br>
+   <button onclick="SEND()">send</button>
+ </div>
+
+</div>
+<p id="p"></p>
+<script>
+    const array=JSON.parse(localStorage.getItem("value"))||[];
+function SEND(){
+    const text=document.getElementById("text1").value;
+    array.push({text1});
+    document.getElementById("text1").value="";
+    display();
+    stores();
+}
+function display(){
+    const list=document.getElementById("p");
+    list.innerHTML="";
+    for(let i=0;i<array.length;i++){
+        list.innerHTML+=`<div>
+        <span>
+         ${array[i].text} <br>
+         </span> 
+         </div>`
+    }
+}
+function stores(){
+         localStorage.setItem("value".JSON.stringify(array));
+}
+
+</script>
+>>>>>>> 778c6cc (ft/implement-homepage)
 </body>
 </html>

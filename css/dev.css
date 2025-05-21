@@ -8,7 +8,11 @@
     background-color: white;
     padding: 40px;
     display: grid;
+<<<<<<< HEAD
     grid-template-columns: 1fr 1fr;
+=======
+    grid-template-columns: 3fr 2fr;
+>>>>>>> 778c6cc (ft/implement-homepage)
     border-radius: 50px;
     width: fit-content;
     height: fit-content;
@@ -24,6 +28,17 @@
     font-size: small;
     margin-top: 50px;
     margin-left: 50px;
+<<<<<<< HEAD
+=======
+     max-width: 290px;
+  margin: auto;
+  background-color: white;
+  padding: 40px;
+  border-radius: 30px;
+  box-shadow: 0 0 10px black;
+  margin-top: 55.79px;
+  
+>>>>>>> 778c6cc (ft/implement-homepage)
 }
 
 
