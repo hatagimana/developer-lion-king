@@ -4,8 +4,8 @@
 
 const array=JSON.parse(localStorage.getItem("value"))||[];
 function postMessage(){
-    const users=[{UserName:"",Text:""}]
-    console.log(localStorage.users.UserName,Text);
+    const users=[{UserName:"",Text:"",}]
+    console.log(localStorage.users.UserName,Text,);
     const text=document.getElementById("text").value;
     array.push({text});
     document.getElementById("text").value="";
@@ -19,7 +19,7 @@ function display(){
         list.innerHTML+=`<div>
         <span>
          ${array[r].text} <br>
-         </span> <button onclick="delet(${r})">delet</button>
+         </span> <button onclick="delet(${r})">delete</button>
          </div>`
     }
 }
@@ -32,9 +32,6 @@ function delet(r){
   stores();
   display();
 }
-
-
-
 //code of creating validation in the login page
 
 function next(){ 

@@ -17,11 +17,7 @@
          <script src="../page/javascript/js.js"  ></script>
     <div id="nav-container">
         
-<<<<<<< HEAD
-        <nav>
-=======
         <nav id="mynav">
->>>>>>> 778c6cc (ft/implement-homepage)
             <a href="home.html">home</a>
             <a href="abaut.html">abaut</a>
             <a href="login.html">login</a>
@@ -31,19 +27,21 @@
         </nav>
         
     </div>
-    <main> 
-                <div class="area">  
+   <main id="blog">
+              <div class="area">  
                 <textarea id="text" placeholder="text..."></textarea>
             </div>
         <div id="blog-container">
-        <button onclick="postMessage()">Post</button>
+        <button onclick="postMessage()">POST</button>
     
             
-        <button onclick="deleteMessage()">Delete</button>
+        <button onclick="deleteItem()">DELETE</button>
         </div>
-            <p id="output"></p>
-            
-    </main>
+          
+   </main>
+   
+
+
     <footer><div id="footer-container">
         <img src="../assets/image 1.png" alt="image" width="30px" height="30px">
         <img src="../assets/image 2.jpg" alt="image" width="30px" height="30px">
@@ -51,33 +49,7 @@
     </div>
     </footer>
 </div>
-<script> 
-     
-
-const array=JSON.parse(localStorage.setItem("value"));
-function postMessage(){
-    const text=document.getElementById("text").value;
-    array.push({text});
-    document.getElementById("text").value="";
-    display();
-    stores();
-}
-function display(){
-    const list=document.getElementById("output");
-    for(let r=0;r<array.length;r++){
-        list.innerHTML+=`<div>
-        <span>
-         $[array[r].text] <br>
-         </span> <button onclick="delet()">remove</button>
-         </div>`
-    }
-}
-function stores(){
-         localStorage.getItem("value".JSON.stringify(array));
-}
 
 
-</script>
-<script src="../page/javascript/js.js"></script>
 </body>
 </html>

@@ -14,17 +14,18 @@
     </head>
 
     <div id="nav-container">
-        <nav>
+        <nav id="mynav">
             <a href="home.html">home</a>
             <a href="abaut.html">abaut</a>
             <a href="login.html">login</a>
             <a href="blog.html">blog</a>
             <a href="skills.html">skills</a>
-            <a href="countact.html">countact</a>
+            <a href="contact.html">contact</a>
         </nav>
         
     </div>
     <main>
+        <!-- <h1 style="color: black;font-family:Algerian ;text-decoration: overline;text-align: center;">LOGIN</h1> -->
 <form id="loginForm">
     <label for="email"></label><br>
     <input type="text" id="email" placeholder="Email"><br>
@@ -33,11 +34,19 @@
     <input type="password" id="password" placeholder="Password"><br>
     <div id="passwordError" class="error"></div><br>
 
-    <button onclick="goToNextpage">login</button>
+    <button onclick="next()">login</button>
 </form>
+<!-- <form id="loginForm">
+  <input type="text" id="email" placeholder="Email">
+  <span id="emailError" style="color: red;"></span><br>
+
+  <input type="password" id="password" placeholder="Password">
+  <span id="passwordError" style="color: red;"></span><br>
+
+  <button onclick="next()">Login</button>
+</form> -->
 
 
-      
 
     </div>
     </main>
@@ -50,11 +59,7 @@
 </div>
 <script src="../page/javascript/js.js"></script>  
  <script>
- function goToNextpage(){
-        if(email,password=true){
-        console.log (window.location.href="blog.html");
-        }
-    }
+ 
  </script>      
 </body>
 </html>
