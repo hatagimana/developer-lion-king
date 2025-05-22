@@ -86,8 +86,7 @@ function next(){
     } 
 
   
-// IF Application.Status == "Submitted"
-//    THEN Inspector.ActionRequired = TRUE
+
 
 
 

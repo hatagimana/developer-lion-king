@@ -268,7 +268,7 @@ p{
   
   }
 
-  @media(max-width<600px){
+  /* @media(max-width<600px){
     body{
   color: rgb(96, 87, 87);
   
@@ -291,4 +291,4 @@ p{
 
  } 
 
-  }
+  } */
