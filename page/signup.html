@@ -3,20 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>homepage</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <title>sign up page</title>
+     <link rel="stylesheet" href="../css/style.css">
+  
 </head>
 <body>
-    
-    <head>
+
+
+  <p id="message"></p>
+
+    <script src="../page/javascript/js.js"></script>
+     <head>
+        <div class="container">
         <div id="logo">
             <img src="../assets/logo.png" alt="Logo Image" width="50px",height="500px">
         </div>
+        </div>
         </head>
-    
         <div id="nav-container">
             <nav id="mynav">
-                <div id="solve">
                 <a href="home.html">home</a>
                 <a href="abaut.html">abaut</a>
                 <a href="login.html">login</a>
@@ -24,27 +29,44 @@
                 <a href="blog.html">blog</a>
                 <a href="skills.html">skills</a>
                 <a href="contact.html">contact</a>
-                </div>
             </nav>
             
         </div>
-        <main>
-            <div class="main">
-                <img src="../assets/lion-group.png" alt="lion-group">
-            </div>
+   
+  
+  <form>    
+                                   
+  
+    <div id="signup-container">
+ 
 
-            <div id="main-container">
-                <h2> Hi,We  are  Software  Developers.</h2>
-            </div>
-            
-        </main>
+  
+
+  <!-- <form id="signupForm">
+    <input type="text" id="username" placeholder="Username"  /><br><br>
+    <input type="email" id="email" placeholder="Email" /><br><br>
+    <input type="password" id="password" placeholder="Password" /><br><br>
+    <button onclick="signupp()">Sign Up</button>
+  </form>
+
+  <p id="message" style="color: red;"></p> -->
+     <h1>Sign Up</h1>
+     <label></label>
+     <input type="username" id="username" placeholder="username"><br><br>
+     <label></label>
+     <input type="password" id="password" placeholder="password"><br><br>
+     <button onclick="signup()">signup</button>
+      <p id="message" style ></p>
+
+    </div>
+
         <footer><div id="footer-container">
             <img src="../assets/image 1.png" alt="image" width="30px" height="30px">
             <img src="../assets/image 2.jpg" alt="image" width="30px" height="30px">
             <img src="../assets/image3.png" alt="image" width="30px" height="30px">
         </div>
         </footer>
-    </div> 
-</div>   
+    
+   
 </body>
 </html>
