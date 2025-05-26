@@ -3,82 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
+    <title>homepage</title>
     <link rel="stylesheet" href="../developer-lion-king/css/style.css">
-    <style>
-        body {
-      background-color: #222;
-      color: aliceblue;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 50px;
-    }
-
-    #loader-spinner {
-      display: none;
-      margin: 20px auto;
-    }
-
-    #style {
-      width: 40px;
-      height: 40px;
-      border: 5px solid #f3f3f3;
-      border-top: 5px solid #3498db;
-      border-radius: 50%;
-      animation: spin 1s linear infinite;
-      margin: 0 auto 20px;
-    }
-
-    @keyframes spin {
-      0% { transform: rotate(0deg);}
-      100% { transform: rotate(360deg);}
-    }
-
-    button {
-      background-color: rgb(252, 247, 247);
-      color: rgb(124, 129, 129);
-      cursor: pointer;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      font-size: 16px;
-    }
-
-    button:disabled {
-      opacity: 0.6;
-      cursor: not-allowed;
-    }
-    </style>
 </head>
 <body>
     
-  <div class="count">
-    <h1>welcome to developer-lion-king</h1>
-  </div>
+    <head>
+        <div id="logo">
+            <img src="../developer-lion-king/assets/logo.png" alt="Logo Image" width="50px",height="500px">
+        </div>
+        </head>
+    
+        <div id="nav-container">
+            <nav id="mynav">
+                <div id="solve">
+                <a href="../developer-lion-king/page/home.html">home</a>
+                <a href="../developer-lion-king/page/abaut.html">abaut</a>
+                <a href="../developer-lion-king/page/login.html">login</a>
+                <a href="../developer-lion-king/page/signup.html">sign up</a>
+                <a href="../developer-lion-king/page/blog.html">blog</a>
+                <a href="../developer-lion-king/page/skills.html">skills</a>
+                <a href="../developer-lion-king/page/contact.html">contact</a>
+                </div>
+            </nav>
+            
+        </div>
+        <main>
+            <div class="main">
+                <img src="../developer-lion-king/assets/lion-group.png" alt="lion-group">
+            </div>
 
-  <div id="loader-spinner">
-    <div id="style"></div>
-    <button onclick="enter()" id="button">ENTER</button>
-  </div>
-   
-<script>
-    window.addEventListener('load', function () {
-      document.getElementById('loader-spinner').style.display = 'block';
-    });
-
-    function enter() {
-      const button = document.getElementById('button');
-      const loader = document.getElementById('style');
-
-      loader.style.display = 'block';  // Show spinner
-      button.disabled = true;           // Disable button
-
-      // Redirect after 5 seconds using setTimeout
-      setTimeout(function () {
-        window.location.href = "../developer-lion-king/page/home.html";
-      }, 5000);  // 2000 milliseconds = 2 seconds
-    }
-
-</script>
+            <div id="main-container">
+                <h2> Hi,We  are  Software  Developers.</h2>
+            </div>
+            
+        </main>
+        <footer><div id="footer-container">
+            <img src="../developer-lion-king/assets/image 1.png" alt="image" width="30px" height="30px">
+            <img src="../developer-lion-king/assets/image 2.jpg" alt="image" width="30px" height="30px">
+            <img src="../developer-lion-king/assets/image3.png" alt="image" width="30px" height="30px">
+        </div>
+        </footer>
+    </div> 
+</div>   
 </body>
 </html>
