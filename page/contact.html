@@ -19,6 +19,7 @@
                 <a href="home.html">home</a>
                 <a href="abaut.html">abaut</a>
                 <a href="login.html">login</a>
+                <a href="signup.html">sign up</a>
                 <a href="blog.html">blog</a>
                 <a href="skills.html">skills</a>
                 <a href="contact.html">contact</a>
@@ -39,35 +40,88 @@
  <div id="email">
   <h3>Telphon Number:0782848694</h3>
    <h3>Email:jeanremmyhatagimana@gmail.com</h3><br>
-   <textarea  id="text1"  placeholder="write your message..."></textarea><br>
-   <button onclick="SEND()">send</button>
+   <!-- <textarea  id="text1"  placeholder="write your message..."></textarea><br>
+   <button onclick="SEND()">send</button> -->
+   <textarea id="text1" placeholder="write your message"></textarea><br><br>
+<button onclick="SEND()">Send</button>
+<button onclick="clearMessages()">delete all</button>
+
+<div id="p" style="margin-top: 20px;"></div>
+
  </div>
 
 </div>
 <p id="p"></p>
 <script>
-    const array=JSON.parse(localStorage.getItem("value"))||[];
-function SEND(){
-    const text=document.getElementById("text1").value;
-    array.push({text1});
-    document.getElementById("text1").value="";
-    display();
-    stores();
-}
-function display(){
-    const list=document.getElementById("p");
-    list.innerHTML="";
-    for(let i=0;i<array.length;i++){
-        list.innerHTML+=`<div>
-        <span>
-         ${array[i].text} <br>
-         </span> 
-         </div>`
+//     const array=JSON.parse(localStorage.getItem("value"))||[];
+// function SEND(){
+//     const text=document.getElementById("text1").value;
+//     array.push({text1});
+//     document.getElementById("text1").value="";
+//     display();
+//     stores();
+// }
+// function display(){
+//     const list=document.getElementById("p");
+//     list.innerHTML="";
+//     for(let i=0;i<array.length;i++){
+//         list.innerHTML+=`<div>
+//         <span>
+//          ${array[i].text} <br>
+//          </span> 
+//          </div>`
+//     }
+// }
+// function stores(){
+//          localStorage.setItem("value".JSON.stringify(array));
+// }
+ const array = JSON.parse(localStorage.getItem("value")) || [];
+
+  // Function yo kohereza message
+  function SEND() {
+    const text = document.getElementById("text1").value.trim();
+
+    // if (text === "") {
+    //   document.write("Andika ubutumwa mbere yo kohereza!")
+    //   style.color="red"
+    //   return;
+    // }
+
+    array.push({ text }); // Bika message
+    document.getElementById("text1").value = ""; // Siba textarea
+    stores(); // Bika muri localStorage
+    display(); // Erekana message
+  }
+
+  // Function yo kwerekana messages
+  function display() {
+    const list = document.getElementById("p");
+    list.innerHTML = "";
+    for (let i = 0; i < array.length; i++) {
+      list.innerHTML += `<div><span>${array[i].text}</span> </span> <button onclick="delet(${i})">delete</button>
+        <br></div>`;
     }
+  }
+
+  // Bika array yose muri localStorage
+  function stores() {
+    localStorage.setItem("value", JSON.stringify(array));
+  }
+
+  // Siba ubutumwa bwose
+  function clearMessages() {
+    localStorage.removeItem("value");
+    array.length = 0; // Gusiba byose muri array
+    display();
+  }
+  //buto yo gusiba
+function delet(i){
+  array.splice(i,1)
+  stores();
+  display();
 }
-function stores(){
-         localStorage.setItem("value".JSON.stringify(array));
-}
+  // Erekana messages igihe page ifunguye
+  window.onload = display;
 
 </script>
 </body>

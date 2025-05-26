@@ -9,29 +9,7 @@ body{
    position: fixed;
 
 }
-/* #nav{
-  padding-left:790px;
-} */
-  /* #log ul li{
-  list-style-type: none;
-  width: 150px;
-  float: left;
-  
 
-  /* padding-left: 890px; */
-
-    /* color: firebrick;
-  text-decoration: none; }
-   */
-  
-  /* #li a{
-  text-decoration: none;
-  background-color: black;
-  color: white;
-  line-height: 50px;
-  padding: 0px;
-  text-align: center;
- }  */
 #nav-container{
    padding-left: 800px;
 }
@@ -71,26 +49,19 @@ body{
   
 }
 #main-container{
-  /* position: fixed;
-  left: 100;
-   bottom: 0; 
-  width: 50%; */
-  /* background-color:rgb(223, 201, 201); */
+
   text-align: left;
   padding: 200px 0;
   text-align: center;
   position: fixed;
   padding-left: 200px;
   font-family:Poor Richard;
-  /* padding-right: 590px; */
- /* z-index: 100;  */
+
 
 
 }
 .main{
-  /* background-color:white;
-  width: 0px;
-  height: 0px; */
+ 
   text-align: right;
   padding:130px;
   position: fixed;
@@ -98,16 +69,7 @@ body{
 }
 
 
-/* #text{
-  padding-left: 270px;
-    height: 60vh;
-    display: flex;
-    align-items: center;
-    position: fixed;
-    background-color: rgb(222, 180, 187);
-    padding: 0%; 
 
-} */
 
 button{color: white;
 background-color: black;
@@ -129,22 +91,15 @@ background-color: black;
   align-items: center;
   position: fixed;
 }
-/* .container-text{
-background-color: rgb(173, 166, 167);
 
-} */
- /* #number{
-  background-color: rgb(225, 15, 15);
- } */
 #contact-container{
-  /* border: 20px solid=black; */
+
   border-radius: 35px;
   color:rgb(0, 0, 0);
-  /* background-color: black; */
-  /* width: 600px;
-  height: 200px; */
+
 
   max-width: 290px;
+  
   margin: auto;
   background-color: white;
   padding: 140px;
@@ -152,27 +107,13 @@ background-color: rgb(173, 166, 167);
   box-shadow: 0 0 10px black;
   margin-top: 55.79px;
   
-/* 
-  padding-top: 100px;
-  
-  text-align: center; 
-  font-family: initial; */
-  /* padding-left: 70px;
-  padding-right: 70px;
-  position: absolute;
-  bottom: 200px;
-  padding-inline-start: 20px; */
-  /* padding-inline-end: 400px; */
+
 }
 .skills-container{
-  /* margin-top: 600px; */
-
-  /* position: absolute; */
+  
   bottom: 190px;
   padding-left: 100px;
-   /* box-shadow: 0 0 10px rgb(62, 43, 145);
-  height: 430px; */
-  
+
 }
 .contact{
   margin-top:-100px ;
@@ -184,7 +125,7 @@ background-color: rgb(173, 166, 167);
   margin-top: -10px;
    max-width: 139px;
   max-height: 469px;
-  /* margin: auto;  */
+ 
   background-color:white;
   padding: 40px;
   border-radius: 5px;
@@ -207,10 +148,7 @@ background-color: rgb(173, 166, 167);
   box-shadow: 0 0 10px  rgb(0, 0, 0);
 }
 
-/* #email{
-  text-align: right;
-  padding-left: -50px;
-} */
+
 #loginForm{
    max-width: 290px;
   margin: auto;
@@ -223,10 +161,7 @@ background-color: rgb(173, 166, 167);
   font-family: 'Courier New', Courier, monospace;
   padding-top: 100px;
 }
-/* #log{
-  text-decoration: overline;
-  
-} */
+
 .error{
   color: red;
   margin-top: 5px;
@@ -268,27 +203,107 @@ p{
   
   }
 
-  /* @media(max-width<600px){
-    body{
-  color: rgb(96, 87, 87);
   
+
+#signup-container{
+    max-width: 220px;
+    max-height: 120px;
+  margin: auto;
+  background-color: white;
+  padding: 140px;
+  border-radius: 30px;
+  box-shadow: 0 0 10px black;
+  margin-top: 55.79px;
 }
-#logo{
-
-   margin-top: 100px;
-
+#but{
+  padding-left: 50px;
 }
 
+@media screen and (max-width: 600px) {
 
-#nav-container{
-  padding-right: 100px;
+  body {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  #logo,
+  #nav-container,
+  #main-container,
+  .main,
+  #footer-container,
+  .button1,
+  #delete,
+  #signup-container,
+  #loginForm,
+  #contact-container,
+  #blog,
+  #skills1,
+  #solve {
+    position: static !important;
+    padding: 15px !important;
+    margin: 10px auto;
+    max-width: 95%;
+    width: auto;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  #mynav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  #mynav a {
+    margin: 8px 0;
+    font-size: 18px;
+    display: block;
+  }
+
+  #footer-container {
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+  }
+
+  .skills-container {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .button1,
+  #delete {
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  p {
+    padding: 10px;
+    margin: 10px 0;
+    position: static !important;
+    text-align: center;
+  }
 }
-
-  #footer-container{
-
-  padding-right: 600px;
-  bottom: 0px; 
-
- } 
-
-  } */
+a:hover{
+  background-color: rgb(205, 200, 200);
+}
+/* #loder{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: brown;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 50px;
+  
+} */
+ 
