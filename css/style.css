@@ -292,18 +292,42 @@ p{
 a:hover{
   background-color: rgb(205, 200, 200);
 }
-/* #loder{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  color: brown;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  font-size: 50px;
-  
-} */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    /* display: flex; */
+    /* justify-content: center; */
+    align-items: center;
+    /* height: 100vh; */
+    margin: 0;
+}
+
+.container {
+    background: white;
+    /* padding: 30px; */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    /* width: 300px; */
+}
+
+form input {
+
+    padding: 10px;
+    /* margin: 10px 0; */
+    /* box-sizing: border-box; */
+}
+
+form button {
+    
+    padding: 1px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #070707;
+}
  

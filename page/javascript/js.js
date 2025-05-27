@@ -162,19 +162,11 @@ function next(){
  
 
 
-document.getElementById('signupForm').addEventListener('submit', function(event) {
-  event.preventDefault();
+document.getElementById("signupForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // prevent actual form submission
 
-  const password = document.getElementById('password').value;
-  const confirmPassword = document.getElementById('confirmPassword').value;
+    // You could add validation or saving logic here
 
-  if (password !== confirmPassword) {
-    alert('Invalid password!');
-
-    
-  } else {
-    alert('Account created successfully!');
-     window.location.href = "login.html";
-
-  }
+    // Redirect to login page
+    window.location.href = "login.html";
 });
