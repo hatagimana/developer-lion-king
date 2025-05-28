@@ -130,43 +130,8 @@ function next(){
 
 
 
-  function signup() {
-      const username = document.getElementById('username').value.trim();
-      const password = document.getElementById('email').value.trim();
-      const message = document.getElementById('message');
 
-      // Clear previous message
-      message.textContent = '';
 
-      // Validation checks
-      if (username===""&&password===""){
-        message.innerHTML= 'username,password,email,Telpon are not be empty';
-      }
-      
-
-       else if (password.length < 6) {
-        message.innerHTML="Password must be at least 6 characters.";
-        
-      }
-       
-       else{
-
-        message.textContent="Sign up successful! Redirecting to login page..."
-        window.location.href='login..html'
-
-       }
-      // // If validation passes
-      // alert('Sign up successful! Redirecting to login page...');
-      // window.location.href = 'login.html';
-    }
  
 
 
-document.getElementById("signupForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // prevent actual form submission
-
-    // You could add validation or saving logic here
-
-    // Redirect to login page
-    window.location.href = "login.html";
-});
